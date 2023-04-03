@@ -4,6 +4,14 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     const newDepositAmountString = depositField.value;
     const newDepositAmount = parseFloat(newDepositAmountString);
 
+    depositField.value = '';
+
+    if (isNaN(newDepositAmount)) {
+
+        alert('please provide valid amonut');
+        return;
+    }
+
 
     // get the current depost total 
 
@@ -28,7 +36,7 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
 
     // clear the deposit filed 
 
-    depositField.value = '';
+
 
 
 
