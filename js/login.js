@@ -6,7 +6,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     const email = emailField.value;
     const passField = document.getElementById('user-pass');
     const pass = passField.value;
-    if (email == 'sajib@gmail.com' && pass === 'sajib18') {
+    if (email == 'admin@gmail.com' && pass === 'admin123') {
         window.location.href = 'bank.html';
     }
     else {
